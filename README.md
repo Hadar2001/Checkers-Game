@@ -1,64 +1,42 @@
-# 🏁 Checkers Game
+# Checkers-Game
 
-A classic Checkers game implemented in C# using Windows Forms.
+A C# WinForms application that implements a classic Checkers (Damka) game.  
+The project allows users to play a standard two-player game or challenge a basic AI opponent.
 
----
+## Features
 
-## 🎯 Features
+- Classic Checkers rules and movement
+- Multiple board sizes: 6x6, 8x8, 10x10
+- Play against another player or versus the computer
+- Visual user interface built with Windows Forms
+- Real-time highlighting of valid moves
+- Turn-based logic with score tracking
+- Fully object-oriented design with clear separation between game logic and UI
 
-- Multiple board sizes (6×6, 8×8, 10×10)
-- Two-player local mode
-- User-friendly graphical interface with buttons and score tracking
-- Turn-based logic and automatic move validation
-- Winning and tie detection
-
----
-
-## 🧰 Tech Stack
-
-- C# with .NET Framework
-- Windows Forms
-- Visual Studio
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 CheckersGameProject/
-├── CheckersGame.sln               # Solution file
-├── CheckersGameProject/          # Main project folder
-│   ├── GameManager.cs
-│   ├── GameBoard.cs
-│   ├── Player.cs
-│   ├── Enums/
-│   ├── Forms/
-│   └── ...
-└── .vs/                           # Visual Studio files
+├── GameLogic/          # Core game classes (Game, GameBoard, Move, Player, etc.)
+├── UserInterface/      # UI Forms (FormGameBoard, FormSettings)
+├── Images/             # Piece images (not included in repository)
+├── Program.cs          # Entry point
+├── App.config          # Application configuration
+├── CheckersGameProject.csproj
 ```
 
----
+## How to Run
 
-## 🚀 Getting Started
+1. Open `CheckersGame.sln` in Visual Studio.
+2. Build and run the project (`F5`).
 
-### Prerequisites
-- Visual Studio 2022 or later
-- .NET Framework 4.7.2 or higher
+> Make sure to include piece images in the `Images/` folder for full functionality.
 
-### Build & Run
+## Requirements
 
-1. Open the `CheckersGame.sln` file in Visual Studio.
-2. Press `F5` to build and run the project, or select **Start Debugging**.
+- .NET Framework 4.8 (or compatible)
+- Visual Studio 2019 or later
 
----
+## License
 
-## 📌 Notes
-
-This project was developed as part of an academic assignment.  
-Feel free to fork, modify, and explore.
-
----
-
-## 📜 License
-
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
